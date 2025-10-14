@@ -23,7 +23,12 @@ tool-calling/
 
 1. **Environment Setup**
 
-First, create a virtual environment and activate it:
+First, initialize UV (Universal Virtualenv) for better dependency management:
+```powershell
+uv init
+```
+
+Then create and activate a virtual environment:
 ```powershell
 python -m venv venv
 .\venv\Scripts\activate
@@ -33,7 +38,7 @@ python -m venv venv
 
 Install the required packages:
 ```powershell
-pip install agents-python dotenv-python
+pip install openai-agents python-dotenv
 ```
 
 3. **Environment Variables**
